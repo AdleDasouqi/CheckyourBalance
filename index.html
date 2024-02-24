@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check your Balance | XCode</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="resources/icons/money.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="header" id="header">
+        <a href="#" class="active">XCode</a>
+        <a href="#">News</a>
+        <a href="#" class="x-icon" onclick="responsiveIcon()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <br>
+
+    <div class="content">
+        <span>Welcome to</span>
+        <h1>Check your Balance</h1>
+        <img src="resources/icons/balance.svg" id="save" alt="Check your Balance">
+    </div>
+
+    <div id="signUp" class="signUp">
+        <h2>Create an Account</h2>
+        <form>
+            <label for="username">Username</label>
+            <input type="text" id="username">
+            <label for="password">Password</label>
+            <input type="password" id="password">
+            <input type="button" onclick="createAccount()" value="Create Account">
+        </form>
+    </div>
+
+    <div id="loggedIn" style="display: none;" class="login">
+        <h2>Login</h2>
+        <form>
+            <label for="loginUsername">Username</label>
+            <input type="text" id="loginUsername">
+            <label for="loginPassword">Password</label>
+            <input type="password" id="loginPassword">
+            <input type="button" onclick="login()" value="Login">
+        </form>
+    </div>
+
+    <div id="balance" style="display: none;" class="balance">
+        <h2>Account Balance</h2>
+        <p id="currentBalance"></p>
+        <button onclick="checkBalance()" id="checkBalance">Check Balance</button>
+        <button onclick="addBalance()" id="addBalance">Add Balance</button>
+    </div>
+
+    <div class="footer">
+        <span>© 2024 XCode | All rights reserved.</span>
+        <a href="https://www.linkedin.com/in/adledasouqi/" target="_blank"><i class="fa fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/xcode.inc/" target="_blank"><i class="fa fa-instagram"></i></a>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
